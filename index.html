@@ -1,21 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" type = "text/css" href="css/normalize.css">
-<link rel="stylesheet" type = "text/css" href="css/styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 </head>
 <body>
-  <div id ="Top_Nav" class = "topnav">
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid" id = "Top_Nav"></div>
+  </nav>
 
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-6" >
+        <h1>My JavaScript Exercises</h1>
+        <div id = "app_links"></div>
+      </div>
+      <div class="col-sm-6"><h1> Demo Code Here</h1></div>
+    </div>
   </div>
 
-<h1>My JavaScript Exercises</h1>
 
-  <div id = 'app_links'>
 
-  </div>
-
-<script src="js/links_data.js"></script>
+<script src='js/links_data.js'></script>
 <script src='js/links.js'></script>
 </body>
 </html>

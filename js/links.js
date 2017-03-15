@@ -3,18 +3,19 @@ const displayTopNav = (args) => document.getElementById('Top_Nav').innerHTML = a
 
 //Generate links for page
 
-let linksHTML = `<ol>`; //initialize html variable as a list
+let linksHTML = `<ul ">`; //initialize html variable as a list
 for (let i = 0; i < links.length; i++) {
   linksHTML += `<li><a href= " ${links[i].href} " > ${links[i].text} </a></li>`;
 }
-  linksHTML += `</ol>`
+  linksHTML += `</ul>`
 
 //Generate Top Nav bar links
 
-let navHTML = ''; //initialize html variable as a list
+let navHTML = `<ul class="nav navbar-nav">`; //initialize html variable as a list
 for (let i = 0; i < topNav.length; i++) {
-  navHTML += `<a href= " ${topNav[i].href} " > ${topNav[i].text} </a>`;
+  navHTML += `<li><a href= " ${topNav[i].href} " > ${topNav[i].text} </a></li>`;
 }
+  navHTML += `</ul>`
 
 //Render Items
 displayLinks(linksHTML);
